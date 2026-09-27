@@ -7,7 +7,7 @@ const pokemon = [
     {
         name: "Bulbasaur",
         image: "Bulbasaur gamer.jpg",
-        color: "blue"
+        color: "green"
     },
     {
         name: "Charmander",
