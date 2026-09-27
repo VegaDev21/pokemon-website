@@ -59,13 +59,15 @@ h2{
 .navbar a{
     padding: 10px 15px;
     border: 1px solid transparent;
+    color: black;
+    text-decoration: none;
 }
 .navbar a:hover{
     border: 2px solid gray;
 }
 .press-start{
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
     border: double, 5px, white;
     animation: blink 1s infinite;
     color:black;
@@ -81,10 +83,6 @@ h2{
     50% {
         opacity: 0.3;
     }
-}
-.navbar a{
-    color: black;
-    text-decoration: none;
 }
 .poke-page{
     background: linear-gradient(#E6D5B8, #C86D51);
@@ -166,7 +164,65 @@ button{
 }
 #pokemonPhoto{
     display: none;
-    width: 300px;
-    height: 250px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 250px;
     object-fit: contain;
-}   
+}
+@media (max-width: 600px){
+    .home-paragraph{
+        font-size: 2rem;
+    }
+    .press-start{
+        font-size: 1rem;
+        margin: 100px auto;
+    }
+    .navbar{
+        display: flex;
+    }
+    .navbar a{
+        font-size: 1rem;
+        padding: 15px;
+        text-align: center;
+    }
+    .container{
+        max-width: none;
+        margin: 20px 10px;
+        padding: 0 15px;
+        font-size: 17px;
+    }
+    .pokemon-image{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .juegito-page{
+       
+    }
+    .juegito-title{
+        font-size: 2rem;
+        padding: 20px 10px;
+    }
+    .Pokemonshowup{
+        flex-direction: column;
+        align-items: center;
+    }
+    #pokemonName{
+        font-size: 1rem;
+    }
+    #pokemonPhoto{
+        width: 90%;
+    }
+    .footer{
+        font-size: 10px;
+    }
+}
