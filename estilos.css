@@ -161,6 +161,8 @@ button{
 }
 #pokemonName{
     font-size: 50px;
+    text-align: center;
+    margin-left: 150px;
 }
 #pokemonPhoto{
     display: none;
@@ -215,6 +217,7 @@ button{
     }
     #pokemonName{
         font-size: 1rem;
+        margin-left: 0;
     }
     #pokemonPhoto{
         width: 90%;
